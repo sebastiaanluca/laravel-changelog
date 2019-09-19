@@ -1,0 +1,68 @@
+{
+    "name": "sebastiaanluca/laravel-changelog",
+    "description": "Show your project's changelog in your application",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "changelog"
+    ],
+    "homepage": "https://github.com/sebastiaanluca/laravel-changelog",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastiaan Luca",
+            "email": "hello@sebastiaanluca.com",
+            "homepage": "https://www.sebastiaanluca.com",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "laravel/framework": "5.8.*|^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.3",
+        "sebastiaanluca/php-codesniffer-ruleset": "~0.4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SebastiaanLuca\\Changelog\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SebastiaanLuca\\Changelog\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SebastiaanLuca\\Changelog\\ChangelogServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "composer-validate": "@composer validate --no-check-all --strict --ansi",
+        "codesniffer-check": "vendor/bin/phpcs --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
+        "codesniffer-fix": "vendor/bin/phpcbf --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 || exit 0",
+        "test": "vendor/bin/phpunit",
+        "test-lowest": [
+            "composer update --prefer-lowest --prefer-dist --no-interaction --ansi",
+            "@test"
+        ],
+        "test-stable": [
+            "composer update --prefer-stable --prefer-dist --no-interaction --ansi",
+            "@test"
+        ],
+        "check": [
+            "@composer-validate",
+            "@codesniffer-check",
+            "@test"
+        ]
+    }
+}
