@@ -24,8 +24,6 @@ return [
      * provided, but it's best you use your own.
      */
 
-    // TODO
-
     'view' => 'changelog::changelog',
 
     /*

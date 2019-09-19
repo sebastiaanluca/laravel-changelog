@@ -26,6 +26,8 @@ class ChangelogServiceProvider extends ServiceProvider
     public function boot() : void
     {
         $this->registerPublishableResources();
+
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', $this->getShortPackageName());
     }
 
     /**

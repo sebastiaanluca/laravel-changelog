@@ -11,9 +11,13 @@ use SebastiaanLuca\Changelog\Http\Controllers\ViewChangelog;
 
 class Changelog
 {
+    /**
+     * @return void
+     */
     public static function routes() : void
     {
-        Route::get(static::config('route.url'), ViewChangelog::class)->name(static::config('route.name'));
+        Route::get(static::config('route.url'), ViewChangelog::class)
+            ->name(static::config('route.name'));
     }
 
     /**
