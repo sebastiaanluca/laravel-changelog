@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace SebastiaanLuca\Changelog\Http\Controllers;
 
 use Illuminate\Contracts\Config\Repository;
+use Illuminate\Contracts\View\View;
 use SebastiaanLuca\Changelog\Changelog;
 
 class ViewChangelog
@@ -27,7 +28,7 @@ class ViewChangelog
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function __invoke()
+    public function __invoke() : View
     {
         $changelog = $this->config->get('changelog.cache') === true
             ? Changelog::getCachedChangelog()
