@@ -1,0 +1,8 @@
+<h1>Changelog</h1>
+<p>All notable changes to <code>laravel-changelog</code> will be documented in this file.</p>
+<p>Updates should follow the <a href="http://keepachangelog.com/">Keep a CHANGELOG</a> principles.</p>
+<h2>Unreleased</h2>
+<h3>Added</h3>
+<ul>
+<li>Added this test changelog</li>
+</ul>
