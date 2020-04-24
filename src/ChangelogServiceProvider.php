@@ -59,7 +59,7 @@ class ChangelogServiceProvider extends ServiceProvider
      */
     private function getConfigurationPath() : string
     {
-        return __DIR__ . '/config/changelog.php';
+        return __DIR__ . '/../config/changelog.php';
     }
 
     /**
