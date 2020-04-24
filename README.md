@@ -16,7 +16,7 @@ __Show your project's changelog in your application.__
 ## Requirements
 
 - PHP 7.3 or higher
-- Laravel 5.8 or higher
+- Laravel 7.0 or higher
 
 Looking for support for earlier versions? Try out any of the previous package versions.
 
