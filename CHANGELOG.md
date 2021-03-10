@@ -4,6 +4,19 @@ All notable changes to `laravel-changelog` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## 1.0.0 (2021-03-10)
+
+### Added
+
+- Added support for PHP 8
+- Added support for Laravel 8
+
+### Removed
+
+- Dropped support for PHP 7.4 and lower
+- Dropped support for Laravel 7 and lower
+- Replaced Travis CI with GitHub Action
+
 ## 0.4.0 (2020-10-19)
 
 ### Added

@@ -11,14 +11,50 @@
 [![Follow @sebastiaanluca on Twitter][twitter-profile-badge]][link-twitter]
 [![Share this package on Twitter][twitter-share-badge]][link-twitter-share]
 
-__Show your project's changelog in your application.__
+__Show your project's parsed Markdown changelog in your application.__
 
 ## Requirements
 
-- PHP 7.3 or higher
-- Laravel 7.0 or higher
+- PHP 8 or higher
+- Laravel 8 or higher
 
 Looking for support for earlier versions? Try out any of the previous package versions.
+
+## How to use
+
+Ensure you have a `CHANGELOG.md` file in the root of your project.
+
+Secondly, register the routes by calling the appropriate method in your main routes file:
+
+```php
+\SebastiaanLuca\Changelog\Changelog::routes();
+```
+
+This will enable you to visit the parsed changelog in your browser by visiting `https://example.com/changelog`.
+
+By default, the changelog is cached. A good practice is to clear the cache during deployment by running:
+
+```shell
+php artisan cache:clear
+```
+
+## Alternative use
+
+If you don't wish to use the package's routing, you can get the parsed and cached changelog in your own controller:
+
+```php
+$changelog = \SebastiaanLuca\Changelog\Changelog::getCachedChangelog();
+```
+
+## Customization
+
+To customize a setting, first publish the configuration file and open `config/changelog.php`:
+
+```shell
+php artisan vendor:publish --tag="laravel-changelog (configuration)"
+```
+
+Here you can change the location of the log, the route name and URL, the view used to display the log, and if and how you want to cache it.
 
 ## License
 

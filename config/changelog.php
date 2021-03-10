@@ -20,7 +20,7 @@ return [
     ],
 
     /*
-     * The view that will show your changelog A default view is
+     * The view that will show your changelog. A default view is
      * provided, but it's best you use your own.
      */
 
