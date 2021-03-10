@@ -2,7 +2,7 @@
 
 [![Latest stable release][version-badge]][link-packagist]
 [![Software license][license-badge]](LICENSE.md)
-[![Build status][travis-badge]][link-travis]
+[![Build status][githubaction-badge]][link-githubaction]
 [![Total downloads][downloads-badge]][link-packagist]
 [![Total stars][stars-badge]][link-github]
 
@@ -92,7 +92,7 @@ Have a project that could use some guidance? Send me an e-mail at [hello@sebasti
 
 [version-badge]: https://img.shields.io/packagist/v/sebastiaanluca/laravel-changelog.svg?label=stable
 [license-badge]: https://img.shields.io/badge/license-MIT-informational.svg
-[travis-badge]: https://img.shields.io/travis/sebastiaanluca/laravel-changelog/master.svg
+[githubaction-badge]: https://github.com/sebastiaanluca/laravel-changelog/actions/workflows/test.yml/badge.svg?branch=master
 [downloads-badge]: https://img.shields.io/packagist/dt/sebastiaanluca/laravel-changelog.svg?color=brightgreen
 [stars-badge]: https://img.shields.io/github/stars/sebastiaanluca/laravel-changelog.svg?color=brightgreen
 
@@ -103,7 +103,7 @@ Have a project that could use some guidance? Send me an e-mail at [hello@sebasti
 
 [link-github]: https://github.com/sebastiaanluca/laravel-changelog
 [link-packagist]: https://packagist.org/packages/sebastiaanluca/laravel-changelog
-[link-travis]: https://travis-ci.org/sebastiaanluca/laravel-changelog
+[link-githubaction]: https://github.com/sebastiaanluca/laravel-changelog/actions/workflows/test.yml?query=branch%3Amaster
 [link-contributors]: ../../contributors
 
 [link-portfolio]: https://www.sebastiaanluca.com
