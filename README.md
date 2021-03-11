@@ -106,8 +106,8 @@ Have a project that could use some guidance? Send me an e-mail at [hello@sebasti
 [link-githubaction]: https://github.com/sebastiaanluca/laravel-changelog/actions/workflows/test.yml?query=branch%3Amaster
 [link-contributors]: ../../contributors
 
-[link-portfolio]: https://www.sebastiaanluca.com
-[link-blog]: https://blog.sebastiaanluca.com
+[link-portfolio]: https://sebastiaanluca.com
+[link-blog]: https://sebastiaanluca.com/blog
 [link-packages]: https://packagist.org/packages/sebastiaanluca
 [link-twitter]: https://twitter.com/sebastiaanluca
 [link-twitter-share]: https://twitter.com/home?status=https%3A//github.com/sebastiaanluca/laravel-changelog%20via%20%40sebastiaanluca
